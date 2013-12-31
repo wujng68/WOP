@@ -28,6 +28,9 @@
         <hibernate.commons.annotaions.version>4.0.2.Final</hibernate.commons.annotaions.version>
         <hibernate.validator.version>4.3.1.Final</hibernate.validator.version>
         
+        <!-- 检索 -->
+        <compass.version>2.2.0</compass.version>
+        
         <!-- commons -->
         <commons-lang3.version>3.1</commons-lang3.version>
         <commons-io.version>2.4</commons-io.version>
@@ -222,6 +225,20 @@
         </dependency>
         <!-- Hiebernate ===== [End] ======================================================= [Hiebernate] == [End] ===== -->
     
+        <!-- Compass ========== [Start] =================================================== Compass ======= [Start] ==== -->
+        <dependency>
+            <groupId>org.compass-project</groupId>
+            <artifactId>compass</artifactId>
+            <version>${compass.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-logging</groupId>
+                    <artifactId>commons-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Compass ========== [End] =================================================== Compass ======= [End] ==== -->
+        
         <!-- Apache Commons ===== [Start] =================================================  Apache Commons === [Start] == -->
         <dependency>
             <groupId>org.apache.commons</groupId>
